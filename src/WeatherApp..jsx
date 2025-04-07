@@ -4,7 +4,7 @@ const WeatherApp = () => {
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
 
-  const API_KEY = "f44c266ab71365270bfaa156533ec126";
+  const API_KEY = "f44c266ab71365270bfaa156533ec126"
   const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
   // Fetch current weather
