@@ -69,7 +69,7 @@ const WeatherApp = () => {
           <h2 className="text-2xl font-semibold text-center mb-4">5-Day Forecast</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {forecast.list.filter((item, index) => index % 8 === 0).map((item) => (
-              <div key={item.dt} className="p-4 bg-blue-200 rounded-xl text-center shadow-md">
+              <div key={item.dt} className="p-4 bg-black rounded-xl text-center shadow-md">
                 <p className="font-bold">{new Date(item.dt * 1000).toLocaleDateString()}</p>
                 <p className="text-lg font-semibold">{item.main.temp}°C</p>
                 <p className="capitalize">{item.weather[0].description}</p>
